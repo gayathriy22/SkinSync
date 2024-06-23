@@ -2,7 +2,7 @@
 
 import NavBar from "@/components/NavBar";
 import ProductCard from "@/components/ProductCard";
-import TesseractOCR from "@/components/Tesseract";
+import TesseractOCR from "@/components/tesseract";
 import { Plus, X } from "lucide-react";
 import { useState } from "react";
 
