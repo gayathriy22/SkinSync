@@ -2,7 +2,7 @@
 
 import NavBar from "@/components/NavBar";
 import TesseractOCR from "@/components/Tesseract";
-import { X } from "lucide-react";
+import { Plus, X } from "lucide-react";
 import { useState } from "react";
 
 export default function MySkin() {
@@ -19,11 +19,12 @@ export default function MySkin() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <NavBar />
-      <p>This is the MySkin Page.</p>
+      <p>My Skincare Products</p>
       <button
         onClick={openModal}
-        className="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded"
+        className="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded flex flex-row gap-2"
       >
+        <Plus />
         Add Product
       </button>
 
