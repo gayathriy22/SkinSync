@@ -1,7 +1,12 @@
+"use client";
+
 import React from "react";
-import Image from "@/node_modules/next/image";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const NavBar = () => {
+  const pathname = usePathname();
+
   const styles = {
     navContainer: {
       display: "flex",
@@ -54,23 +59,28 @@ const NavBar = () => {
     },
   };
 
+  const getNavLinkStyle = (path) => {
+    return pathname === path ? styles.activeNavLink : styles.navLink;
+  };
+
   return (
     <nav style={styles.navContainer}>
-    <div style={styles.logo}>
+      <div style={styles.logo}>
         <Image
           src="/skinSyncLogo.png" // Path to your logo image
           alt="skinSync Logo"
           width={150} // Adjust width as needed
           height={50} // Adjust height as needed
         />
-      </div>      <div style={styles.navLinks}>
-        <a href="/" style={{ ...styles.navLink, ...styles.activeNavLink }}>
+      </div>
+      <div style={styles.navLinks}>
+        <a href="/" style={getNavLinkStyle("/")}>
           Home
         </a>
-        <a href="/MySkin" style={styles.navLink}>
+        <a href="/MySkin" style={getNavLinkStyle("/MySkin")}>
           My Skin
         </a>
-        <a href="/Blog" style={styles.navLink}>
+        <a href="/Blog" style={getNavLinkStyle("/Blog")}>
           Blog
         </a>
       </div>
