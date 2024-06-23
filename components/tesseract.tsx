@@ -32,15 +32,21 @@ export default function TesseractOCR() {
   };
 
   return (
-    <div>
+    <div className="flex flex-col items-center justify-center">
       <input type="file" accept="image/*" onChange={handleImageChange} />
-      <button onClick={handleOCR} disabled={!image || loading}>
-        {loading ? "Processing..." : "Start OCR"}
+      <button
+        onClick={handleOCR}
+        disabled={!image || loading}
+        className="mt-5 px-4 py-2 bg-pink-500 text-white rounded-md hover:bg-pink-600"
+      >
+        {loading ? "Processing..." : "Confirm Image"}
       </button>
-      <div>
-        <h3>Extracted Text:</h3>
-        <p>{text}</p>
-      </div>
+      {text && (
+        <div className="mt-8 text-center">
+          <h2 className="font-black">Is this the correct product?</h2>
+          <p>{text}</p>
+        </div>
+      )}
     </div>
   );
 }
