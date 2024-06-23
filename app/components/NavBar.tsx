@@ -6,9 +6,15 @@ const NavBar = () => {
       display: "flex",
       justifyContent: "space-between",
       alignItems: "center",
-      padding: "1rem 2rem",
+      padding: "1rem 4rem", // Adjusted padding for more width
       backgroundColor: "#FDEEF7",
       borderBottom: "2px solid #F7A8B8",
+      width: "100%", // Ensure it takes full width of the container
+      boxSizing: "border-box", // Include padding in the element's total width and height
+      position: "fixed", // Fix the nav bar to the top of the page
+      top: 0, // Position it at the top
+      left: 0, // Position it at the left
+      zIndex: 1000, // Ensure it stays on top of other elements
     },
     logo: {
       fontSize: "1.5rem",
@@ -39,6 +45,9 @@ const NavBar = () => {
       fontFamily: "'Poppins', sans-serif",
       display: "flex",
       alignItems: "center",
+      fontWeight: "bold", // Make the text bold
+      WebkitTextStroke: "1px black", // Outline the text in black
+
     },
     signInButtonHover: {
       backgroundColor: "#BF5D8C",
