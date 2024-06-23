@@ -30,6 +30,10 @@ const UserAccountForm: React.FC = () => {
     setSkintype(e.target.value);
   };
 
+  const handleSensitive = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSensitive(e.target.value);
+  };
+
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log(username);
@@ -139,22 +143,7 @@ const UserAccountForm: React.FC = () => {
             required
           />
         </div>
-        
-        {/* <div>
-          <label htmlFor="skintype">Skin Type</label>
-          <select
-            id="skintype"
-            name="skintype"
-            value={skintype}
-            onChange={handleSkintype}
-            required
-          >
-            <option value="Dry">Dry</option>
-            <option value="Oily">Oily</option>
-            <option value="Combination">Combination</option>
-            <option value="I'm not sure">IDK</option>
-          </select>
-        </div> */}
+
 
         <div>
           <legend> Skin Type</legend>
@@ -202,8 +191,57 @@ const UserAccountForm: React.FC = () => {
             <label htmlFor="idk">I'm not sure</label>
           </div>
         
-        
         </div>
+
+
+        <div>
+          <legend> Skin Sensitivity</legend>
+          <div>
+            <input
+              id="sensitive"
+              name="sensitive"
+              type="radio"
+              value="sensitive"
+              onChange={handleSensitive}
+            />
+            <label htmlFor="sensitive">Sensitive</label>
+          </div>
+
+          <div>
+            <input
+              id="not-sensitive"
+              name="sensitive"
+              type="radio"
+              value="not-sensitive"
+              onChange={handleSensitive}
+            />
+            <label htmlFor="not-sensitive">Not Sensitive</label>
+          </div>
+
+          <div>
+            <input
+              id="products"
+              name="sensitive"
+              type="radio"
+              value="products"
+              onChange={handleSensitive}
+            />
+            <label htmlFor="products">Change Products Often</label>
+          </div>
+
+          <div>
+            <input
+              id="idk"
+              name="sensitive"
+              type="radio"
+              value="idk"
+              onChange={handleSensitive}
+            />
+            <label htmlFor="idk">I'm not sure</label>
+          </div>
+
+        </div>
+
         <button type="submit">Submit</button>
       </form>
     </div>
