@@ -11,7 +11,15 @@ import { getStorage } from "firebase/storage";
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 
 // test
-
+const firebaseConfig = {
+    apiKey: "AIzaSyBahZi4kvD3Ml5PmVvE1SyEqkYYL59MRrk",
+    authDomain: "berkeleyhacks24.firebaseapp.com",
+    projectId: "berkeleyhacks24",
+    storageBucket: "berkeleyhacks24.appspot.com",
+    messagingSenderId: "657471536183",
+    appId: "1:657471536183:web:186128126ac79e4b1553b2",
+    measurementId: "G-QBZFW1XJJM"
+  };
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 //const analytics = getAnalytics(app);
