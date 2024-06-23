@@ -11,22 +11,21 @@ const NavBar = () => {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: "1rem 4rem", // Adjusted padding for more width
+    padding: "1rem 4rem",
     backgroundColor: "#FDEEF7",
     borderBottom: "2px solid #F7A8B8",
-    width: "100%", // Ensure it takes full width of the container
-    boxSizing: "border-box", // Include padding in the element's total width and height
-    position: "fixed", // Fix the nav bar to the top of the page
-    top: 0, // Position it at the top
-    left: 0, // Position it at the left
-    zIndex: 1000, // Ensure it stays on top of other elements
+    width: "100%",
+    boxSizing: "border-box",
+    position: "fixed",
+    top: 0,
+    left: 0,
+    zIndex: 1000,
   };
 
   const logo: CSSProperties = {
     fontSize: "1.5rem",
     fontWeight: "bold",
-    color: "#D17EB6",
-    fontFamily: "'Poppins', sans-serif",
+    color: "#ec4899",
   };
 
   const navLinks: CSSProperties = {
@@ -36,31 +35,26 @@ const NavBar = () => {
 
   const navLink: CSSProperties = {
     fontSize: "1rem",
-    textDecoration: "none",
     color: "black",
-    fontFamily: "'Poppins', sans-serif",
   };
 
   const activeNavLink: CSSProperties = {
-    color: "#D17EB6",
+    color: "#ec4899",
     fontWeight: "bold",
   };
 
   const signInButton: CSSProperties = {
     padding: "0.5rem 1rem",
-    backgroundColor: "#D17EB6",
+    backgroundColor: "#ec4899",
     color: "white",
     borderRadius: "5px",
-    textDecoration: "none",
-    fontFamily: "'Poppins', sans-serif",
     display: "flex",
     alignItems: "center",
-    fontWeight: "bold", // Make the text bold
-    WebkitTextStroke: "1px black", // Outline the text in black
+    fontWeight: "bold",
   };
 
   const signInButtonHover: CSSProperties = {
-    backgroundColor: "#BF5D8C",
+    backgroundColor: "#fbcfe8",
   };
 
   const getNavLinkStyle = (path: string) => {

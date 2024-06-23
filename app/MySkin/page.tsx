@@ -20,12 +20,12 @@ export default function MySkin() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <NavBar />
-      <h1 className="mb-5">My Skincare Products</h1>
+      <h1 className="mb-5 mt-5 font-semibold text-5xl">My Skincare Products</h1>
       <div className=" max-w-9xl">
         <div className="flex justify-end mb-5">
           <button
             onClick={openModal}
-            className="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded flex flex-row gap-2"
+            className="bg-pink-500 hover:bg-pink-700 text-white font-semibold py-2 px-4 rounded flex flex-row gap-2"
           >
             <Plus />
             Add Product
@@ -43,7 +43,7 @@ export default function MySkin() {
 
       <button
         onClick={openModal}
-        className="bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded flex flex-row gap-2 mt-5"
+        className="bg-pink-500 hover:bg-pink-700 text-white font-semibold py-2 px-4 rounded flex flex-row gap-2 mt-5"
       >
         <Plus />
         Add Product
