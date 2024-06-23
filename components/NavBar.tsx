@@ -57,17 +57,17 @@ const NavBar = () => {
     <nav style={styles.navContainer}>
       <div style={styles.logo}>skinSync</div>
       <div style={styles.navLinks}>
-        <a href="#" style={{ ...styles.navLink, ...styles.activeNavLink }}>
+        <a href="/" style={{ ...styles.navLink, ...styles.activeNavLink }}>
           Home
         </a>
-        <a href="#" style={styles.navLink}>
+        <a href="/MySkin" style={styles.navLink}>
           My Skin
         </a>
-        <a href="#" style={styles.navLink}>
+        <a href="/Blog" style={styles.navLink}>
           Blog
         </a>
       </div>
-      <a href="#" style={styles.signInButton}>
+      <a href="/SignIn" style={styles.signInButton}>
         Sign In &#8594;
       </a>
     </nav>
