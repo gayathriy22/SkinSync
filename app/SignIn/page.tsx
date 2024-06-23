@@ -43,7 +43,6 @@ const UserAccountForm: React.FC = () => {
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
       <form onSubmit={onSubmit} className="w-full max-w-lg p-8 bg-white shadow-md rounded-lg">
         <h1 className="text-3xl font-bold mb-6 text-center text-pink-500">Create Account</h1>
-        <p className="text-center mb-4">Already have an account? <Link href="/login" legacyBehavior><a className="text-pink-500 underline">Log in</a></Link></p>
         
         <div className="mb-4">
           <label htmlFor="username" className="block text-gray-700 font-bold mb-2">Username</label>
