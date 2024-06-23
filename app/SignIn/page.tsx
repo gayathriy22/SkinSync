@@ -6,7 +6,8 @@ import NavBar from "@/components/NavBar";
 // import React, { useState, ChangeEvent, FormEvent } from 'react';
 import React, { useState } from 'react';
 
-import { db } from '../firebase';
+
+import { db } from '../firebase.ts';
 import { collection, addDoc } from 'firebase/firestore';
 // import { useClient } from 'next/client';
 
@@ -55,7 +56,7 @@ const UserAccountForm: React.FC = () => {
   return (
     <div>
       <form onSubmit={onSubmit}>
-        <h1>Create Account</h1>
+        {/* <h1>Create Account</h1>
         <p>Already have an account? <a href="/login">Log in</a></p>
         <div>
           <label htmlFor="username">Username</label>
@@ -79,13 +80,19 @@ const UserAccountForm: React.FC = () => {
             required
           />
         </div>
-
+ */}
 
 
 
         <h2>Personal Information</h2>
+        <h2>Personal Information</h2>
+
+        <h2>Personal Information</h2>
+        <h2>Personal Information</h2>
+        <h2>Personal Information</h2>
+
         
-        <div>
+        <div> 
           <label htmlFor="name">Name</label>
           <input
             type="text"
@@ -128,7 +135,7 @@ const UserAccountForm: React.FC = () => {
             name="password"
             id="password"
             value={password}
-            onChange={(e) => setUsername(e.target.value)}
+            onChange={(e) => setPassword(e.target.value)}
             required
           />
         </div>
