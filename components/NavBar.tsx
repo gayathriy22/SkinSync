@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "@/node_modules/next/image";
 
 const NavBar = () => {
   const styles = {
@@ -55,8 +56,14 @@ const NavBar = () => {
 
   return (
     <nav style={styles.navContainer}>
-      <div style={styles.logo}>skinSync</div>
-      <div style={styles.navLinks}>
+    <div style={styles.logo}>
+        <Image
+          src="/skinSyncLogo.png" // Path to your logo image
+          alt="skinSync Logo"
+          width={150} // Adjust width as needed
+          height={50} // Adjust height as needed
+        />
+      </div>      <div style={styles.navLinks}>
         <a href="/" style={{ ...styles.navLink, ...styles.activeNavLink }}>
           Home
         </a>
