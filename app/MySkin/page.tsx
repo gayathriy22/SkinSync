@@ -1,6 +1,7 @@
 "use client";
 
 import NavBar from "@/components/NavBar";
+import ProductCard from "@/components/ProductCard";
 import TesseractOCR from "@/components/Tesseract";
 import { Plus, X } from "lucide-react";
 import { useState } from "react";
@@ -27,6 +28,11 @@ export default function MySkin() {
         <Plus />
         Add Product
       </button>
+
+      <div className="w-full max-w-4xl mt-16 px-4">
+        <ProductCard />
+      </div>
+
 
       {isModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
