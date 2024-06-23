@@ -47,7 +47,6 @@ const NavBar = () => {
       alignItems: "center",
       fontWeight: "bold", // Make the text bold
       WebkitTextStroke: "1px black", // Outline the text in black
-
     },
     signInButtonHover: {
       backgroundColor: "#BF5D8C",
