@@ -12,7 +12,7 @@ const Footer = () => {
       bottom: 0,
       left: 0,
       width: "100%",
-      position: "fixed",
+      position: "fixed" as "fixed",
     },
   };
 
